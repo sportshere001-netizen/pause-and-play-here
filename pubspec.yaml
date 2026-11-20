@@ -1,0 +1,23 @@
+name: pause_and_play
+description: Pause&Play - Open-source cross-platform media player powered by libmpv & FFmpeg.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+ sdk: '>=3.10.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  media_kit: ^1.2.6
+  media_kit_video: ^2.0.1
+  media_kit_libs_video: ^1.0.7
+  file_selector: ^1.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
