@@ -1,10 +1,10 @@
 name: pause_and_play
-description: Pause&Play - Open-source cross-platform media player powered by libmpv & FFmpeg.
+description: "Pause&PlayHere - Open-source cross-platform media player powered by libmpv & FFmpeg."
 publish_to: 'none'
 version: 1.0.0+1
 
 environment:
- sdk: '>=3.10.0 <4.0.0'
+  sdk: '>=3.10.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -18,6 +18,18 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  msix: ^3.18.0
 
 flutter:
   uses-material-design: true
+
+msix_config:
+  display_name: "Pause&PlayHere"
+  publisher_display_name: "Netizen Here Labs - Aditya Kadam"
+  identity_name: NetizenHereLabs-AdityaKad.PausePlayHere
+  publisher: CN=5EB6FB22-23CB-4A10-9D0C-7F876593913F
+  msix_version: 1.0.0.0
+  logo_path: assets/logo.png
+  icons_background_color: transparent
+  capabilities: internetClient
+  file_extension: .mp4, .mkv, .avi, .mov, .webm, .mp3, .flac, .wav, .ogg, .opus, .m4a
